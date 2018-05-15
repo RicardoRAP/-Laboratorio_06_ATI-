@@ -1,6 +1,6 @@
 table {
     border-collapse: collapse;
-    width: 100%;
+    width: 90%;
 }
 
 th, td {
@@ -16,10 +16,10 @@ th {
 }
 
 .btn {
-    background-color: #4CAF50;
+    background-color: #0098ff;
     border: none;
     color: white;
-    padding: 12px 30px;
+    padding: 12px 12px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
