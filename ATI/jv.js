@@ -18,12 +18,13 @@ function loadDoc() {
 function myFunction(xml) {
 	var i;
 	var xmlDoc = xml.responseXML;
-	var table="<tr><th>Artista</th><th>Titulo</th></tr>";
+	var table="<tr><th>Titulo</th><th>Artista</th></tr>";
 	var x = xmlDoc.getElementsByTagName("CD");
-	for (i = 0; i <x.length; i++) { 
+	var tam = x.length;
+	for (i = 0; i < tam; i++) { 
 		table += "<tr><td>" +
-		x[i].getElementsByTagName("ARTIST")[0].childNodes[0].nodeValue + "</td><td>" +
-		x[i].getElementsByTagName("TITLE")[0].childNodes[0].nodeValue + "</td></tr>";
+		x[i].getElementsByTagName("TITLE")[0].childNodes[0].nodeValue + "</td><td>" +
+		x[i].getElementsByTagName("ARTIST")[0].childNodes[0].nodeValue + "</td></tr>";
 	}
 	document.getElementById("demo").innerHTML = table;
 }
